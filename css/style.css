@@ -2,8 +2,8 @@
 body {
   background-color: #3d0e16;
   color: #8a753d;
-  margin: 0;
   font-family: "Oswald", sans-serif;
+  margin: 0;
 }
 
 .banner {
@@ -43,8 +43,22 @@ body {
   margin-top: 60px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+.welcomeTextWrapper {
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcomeTextWrapper .welcomeText {
+  font-weight: 100;
 }
 
 .menuAbout {
@@ -59,7 +73,7 @@ body {
 .menuAbout .item {
   display: -ms-flexbox;
   display: flex;
-  background-color: #f5efef;
+  background-color: #ccc5c5;
   border-radius: 6px;
   width: 32%;
   -ms-flex-align: center;
@@ -71,10 +85,12 @@ body {
 }
 
 .sidebar {
-  background-color: #bdbbbb;
-  width: 240px;
+  background-color: #ccc5c5;
+  width: 220px;
   height: 100vh;
   position: absolute;
+  top: 0;
+  margin-top: 127px;
 }
 
 .sidebar .sidebarWrapper {
@@ -87,5 +103,12 @@ body {
   padding: 40px 10px;
   font-size: 24px;
   border-bottom: 1px solid #3d0e16;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.sidebar .sidebarItem:hover {
+  padding-left: 20px;
+  color: #3d0e16;
 }
 /*# sourceMappingURL=style.css.map */

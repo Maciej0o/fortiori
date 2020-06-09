@@ -2,7 +2,20 @@
   margin-left: 260px;
   margin-top: 60px;;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+.welcomeTextWrapper {
+  font-size: 24px;;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;;
+
+  .welcomeText {
+    font-weight: 100;
+  }
 }
 
 .menuAbout {
@@ -14,7 +27,7 @@
 
   .item {
     display: flex;
-    background-color: rgb(245, 239, 239);
+    background-color: rgb(204, 197, 197);
     border-radius: 6px;
     width: 32%;
     align-items: center;
