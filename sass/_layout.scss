@@ -2,15 +2,17 @@ body {
   background-color: $main-color;
   color: $title-color;
   margin: 0;
+  font-family: $text;
 }
 
 .banner {
   background-color: rgb(245, 239, 239);
-  padding: 20px;
+  padding: 30px 20px;
   display: flex;
   justify-content: center;
 
   .titleBanner {
+    padding-left: 240px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,7 +27,8 @@ body {
     }
 
     h2 {
-      font-size: 25px;
+      font-size: 45px;
+      margin: 0;
     }
   }
 
