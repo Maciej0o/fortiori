@@ -5,8 +5,7 @@ body {
 }
 
 .banner {
-  background-color: white;
-  width: 100%;
+  background-color: #f5efef;
   padding: 20px;
   display: -ms-flexbox;
   display: flex;
@@ -33,5 +32,34 @@ body {
 
 .banner .titleBanner h2 {
   font-size: 25px;
+}
+
+.homePage {
+  margin-top: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.menuAbout {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+}
+
+.menuAbout .item {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5efef;
+  width: 32%;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 200px;
+  border: 2px solid #3d0e16;
 }
 /*# sourceMappingURL=style.css.map */

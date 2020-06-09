@@ -1,0 +1,22 @@
+.homePage {
+  margin-top: 60px;;
+  display: flex;
+  justify-content: center;
+}
+
+.menuAbout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+
+  .item {
+    display: flex;
+    background-color: rgb(245, 239, 239);
+
+    width: 32%;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: 2px solid $main-color;
+  }
+}
