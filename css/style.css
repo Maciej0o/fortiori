@@ -73,6 +73,8 @@ body {
 .menuAbout .item {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   background-color: #ccc5c5;
   border-radius: 6px;
   width: 32%;
@@ -80,17 +82,42 @@ body {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 200px;
+  height: 250px;
   border: 2px solid #3d0e16;
+  transition: 1s;
+  position: relative;
+}
+
+.menuAbout .itemMenuTitle {
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  transition: 1s;
+}
+
+.menuAbout .menuDescription {
+  padding: 0 15px 25px 15px;
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  top: 50%;
+}
+
+.menuAbout .item:hover .itemMenuTitle {
+  top: 5%;
+}
+
+.menuAbout .item:hover .menuDescription {
+  opacity: 1;
+  top: 35%;
 }
 
 .sidebar {
   background-color: #ccc5c5;
   width: 220px;
-  height: 100vh;
+  min-height: 86.6vh;
   position: absolute;
-  top: 0;
-  margin-top: 127px;
+  top: 127px;
 }
 
 .sidebar .sidebarWrapper {

@@ -27,12 +27,43 @@
 
   .item {
     display: flex;
+    flex-direction: column;
     background-color: rgb(204, 197, 197);
     border-radius: 6px;
     width: 32%;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 250px;
     border: 2px solid $main-color;
+    transition: 1s;
+    position: relative;
+  }
+
+  .itemMenuTitle {
+    font-size: 20px;
+    position: absolute;
+    top: 30%;                    
+    transition: 1s;
+
+  }
+
+  .menuDescription {
+    padding: 0 15px 25px 15px;
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    top: 50%;                    
+  }
+
+  .item:hover {
+
+    .itemMenuTitle {
+      top: 5%;
+    }
+    .menuDescription {
+      opacity: 1;
+      top: 35%;
+    }
+
   }
 }
