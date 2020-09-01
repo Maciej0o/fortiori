@@ -253,19 +253,36 @@ body {
   color: white;
   opacity: 1;
   background-color: #6e6e6e;
-  border-radius: 2px;
-  border: 1px #8a753d solid;
+  border-radius: 5px;
+  border: 1px white solid;
   box-shadow: 5px 5px 15px #000;
+}
+
+.contactForm form input, .contactForm form select {
+  height: 25px;
 }
 
 .contactForm form :-ms-input-placeholder {
   color: white;
   opacity: 1;
+  padding: 5px;
 }
 
 .contactForm form ::placeholder {
   color: white;
   opacity: 1;
+  padding: 5px;
+}
+
+.submit {
+  background-color: #8a753d;
+  border: none;
+  padding: 5px 20px;
+  color: white;
+  border: 1px white solid;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px #000;
+  border-radius: 5px;
 }
 
 .activePage {

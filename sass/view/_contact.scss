@@ -3,11 +3,13 @@
   height: 100%;
   color: $title-color;
   display: none;
+  
 }
 
 .titleContact {
   padding: 30px;
   text-align: center;
+  
 
 }
 
@@ -25,6 +27,7 @@
 
   p {
     text-align: center;
+    
   }
 }
 
@@ -41,18 +44,36 @@
       color: white;
       opacity: 1;
       background-color:rgb(110, 110, 110);
-      border-radius: 2px;
-      border: 1px $white solid;
+      border-radius: 5px;
+      border: 1px white solid;
       box-shadow: 5px 5px 15px #000;
+    }
+
+    input, select {
+      height: 25px;
     }
     ::placeholder {
       color: white;
       opacity: 1;
+      padding: 5px;
 
     }
   }
 }
 
+.submit {
+  background-color: $title-color;
+  border: none;
+  padding: 5px 20px;
+  color: white;
+  border: 1px white solid;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px #000;
+  border-radius: 5px;
+
+
+
+}
 
 
 
