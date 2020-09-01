@@ -1,27 +1,52 @@
 .sidebar {
-  background-color: rgb(204, 197, 197);
-  width: 220px;
-  min-height: 86.6vh;
+  background-color: rgb(36, 36, 36);
+  opacity: 0.8;
+  width: 160px;
+  height: 100vh;
   position: absolute;
-  top: 127px;;
   
+  .titleBanner {
+    margin: 20px auto 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .logo {
+      display: block;   
+      justify-content: center;   
+      width: 140px;
+      color: $title-color;
+    }
+    .title {
+      font-size: 24px;;
+      justify-content: center;
+    }
+  }
 
   .sidebarWrapper {
-    margin: 0;
+    height: 50%;
     list-style-type: none;
-    padding: 0 15px;
+    padding: 0px 15px;
 
 
     .sidebarItem {
-      padding: 40px 10px;
-      font-size: 24px;;
+      padding: 25px 0px 15px 10px ;
+      font-size: 10px;;
       border-bottom: 1px solid $main-color;
       cursor: pointer;
       transition: 1s;
 
       a {
         text-decoration: none;
-        color: $title-color;
+        color: #fff;
+        text-align: center;
+        display: block;
+      }
+
+      i {
+        font-size: 20px;
+        padding-bottom: 10px;
+        display: block;
+        text-align: center;
       }
       
       
@@ -31,11 +56,20 @@
   }
 
   .sidebarItem:hover {
-    padding-left: 20px;
+    padding-left: 15px;
 
     
-    a {
-      color: $main-color;
+    a, i{
+      color: $title-color;
     }
+  }
+}
+
+.active {
+  color: $title-color!important;
+
+  a {
+    color: $title-color!important;
+
   }
 }

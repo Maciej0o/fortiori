@@ -1,69 +1,56 @@
 .homePage {
-  margin-left: 260px;
-  margin-top: 60px;;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-left: 160px;
+  height: 100%;
+  color: $title-color;
+ display: none;
 }
 
-.welcomeTextWrapper {
-  font-size: 24px;;
-  color: white;
-  width: 100%;
+.logoBaner {
+  display: none;
+  padding: 20px;
+  width: 200px;;
+}
+.welcomeText p {
+  padding: 18px 0; 
   text-align: center;
-  margin-bottom: 30px;;
-
-  .welcomeText {
-    font-weight: 100;
-  }
 }
 
-.menuAbout {
+
+ .operatingRangeWrapper {
+   display: flex;
+   flex-wrap: wrap;
+   width: 600px;
+   margin: 50px auto;
+ }
+
+ .operatingRangeItem {
   display: flex;
-  flex-wrap: wrap;
-  width: 60%;
-  color: black;
-  
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  padding: 20px 0;
+  background-color: rgb(43, 42, 42);
+  border: 1px $main-color solid;
+  border-radius: 5px;
 
-  .item {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(204, 197, 197);
-    border-radius: 6px;
-    width: 32%;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    border: 2px solid $main-color;
-    transition: 1s;
-    position: relative;
+  img {
+    width: 90px;
   }
 
-  .itemMenuTitle {
-    font-size: 20px;
-    position: absolute;
-    top: 30%;                    
-    transition: 1s;
+  p {
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
 
   }
+ 
+ }
 
-  .menuDescription {
-    padding: 0 15px 25px 15px;
-    opacity: 0;
-    transition: 1s;
-    position: absolute;
-    top: 50%;                    
-  }
+ .operatingRangeItem:hover {
+   color: $title-color;
+   background-color: rgb(77, 76, 76);
+ }
 
-  .item:hover {
-
-    .itemMenuTitle {
-      top: 5%;
-    }
-    .menuDescription {
-      opacity: 1;
-      top: 35%;
-    }
-
-  }
-}
+ .activePage {
+   display: block;
+ }

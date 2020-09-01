@@ -1,0 +1,62 @@
+.contact {
+  margin-left: 160px;
+  height: 100%;
+  color: $title-color;
+  display: none;
+}
+
+.titleContact {
+  padding: 30px;
+  text-align: center;
+
+}
+
+.contactWrapper {
+  padding: 80px 50px 0; 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactData, .contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+
+  p {
+    text-align: center;
+  }
+}
+
+.contactForm {
+  border-left: 1px white solid;
+
+  form {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+
+    .elementForm {
+      margin: 10px;
+      color: white;
+      opacity: 1;
+      background-color:rgb(110, 110, 110);
+      border-radius: 2px;
+      border: 1px $white solid;
+      box-shadow: 5px 5px 15px #000;
+    }
+    ::placeholder {
+      color: white;
+      opacity: 1;
+
+    }
+  }
+}
+
+
+
+
+
+.activePage {
+  display: block;
+}

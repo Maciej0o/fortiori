@@ -5,63 +5,145 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2403d028a5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     
-    <section class="banner">
-      <div class="titleBanner">
-        <img src="images/123.gif">
-        <h2>FORTIORI</h2>
-      </div>  
-    </section>
-
     <nav class="sidebar">
+      <div class="titleBanner">
+        <img class="logo" src="images/nagłówek.png">
+      </div> 
       <ul class="sidebarWrapper">
-        <li class="sidebarItem"><a href="#home">STRONA GŁÓWNA</a></li>
-        <li class="sidebarItem"><a href="#o_mnie">O MNIE</a></li>
-        <li class="sidebarItem"><a href="#zakres_działalności">ZAKRES DZIAŁALNOŚCI</a></li>
-        <li class="sidebarItem"><a href="#kontakt">KONTAKT</a></li>
-
+        <li class="sidebarItem active" id="homePage">
+          <i class="fas fa-home"></i>
+          <a href="#home">STRONA GŁÓWNA</a></li>
+        <li class="sidebarItem" id="aboutMe">
+          <i class="fas fa-book-open"></i>
+          <a href="#o_mnie">O MNIE</a></li>
+        <li class="sidebarItem" id="aboutWork">
+          <i class="fas fa-pen-fancy"></i>
+          <a href="#zakres_działalności">ZAKRES DZIAŁALNOŚCI</a></li>
+        <li class="sidebarItem" id="contact">
+          <i class="fas fa-phone-volume"></i>
+          <a href="#kontakt">KONTAKT</a></li>
       </ul>
     </nav>
     
-    <section class="homePage">
 
-      <div class="welcomeTextWrapper">
-        <h4 class="welcomeText">Tekst powitralny/ marketingowy / zachęcający<p></p></h4>
-      </div>
-      <div class="menuAbout">
-        <div class="item1 item">
-          <h5 class="itemMenuTitle">Windykacja należności</h5>
-          <p class="menuDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <section class="homePage activePage">
+      <div class="shadow"></div>
+      <div class="container">
+        <div class="welcomeText">
+          <img class="logoBaner" src="images/nagłówek.png">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, earum!</p>
         </div>
-        <div class="item2 item">
-          <h5 class="itemMenuTitle">Przygotowanie i opiniowanie umów</h5>
-          <p class="menuDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="item3 item">
-          <h5 class="itemMenuTitle">Pomoc frankowiczom</h5>
-          <p class="menuDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="item4 item">
-          <h5 class="itemMenuTitle">Upadłość</h5>
-          <p class="menuDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </div>
-        <div class="item5 item">
-          <h5 class="itemMenuTitle">Restrukturyzacja</h5>
-          <p class="menuDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="item6 item">
-          <h5 class="itemMenuTitle">KAFEL 6</h5>
-          <p class="menuDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="operatingRangeWrapper">
+          <div class="operatingRangeItem">
+            <img src="/images/kafel1.png" alt="">
+            <p>windykacja należności</p>
+            
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel2.png" alt="">
+            <p>przygotowanie i opiniowanie umów</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel3.png" alt="">
+            <p>pomoc frankowiczom</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel4.png" alt="">
+            <p>restrukturyzacja</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel5.png" alt="">
+            <p>upadłość</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel6.png" alt="">
+            <p>postępowanie sądowe</p>
+          </div>
         </div>
       </div>
     </section>
     
-    <section class="footer">
-      <div class="footerWrapper"><p>FORTIORI Michał Wręczycki</p> <p>example@gmail.com</p></div> <p>Realizacja Maciej Smolarczyk</p> 
-    </section>
 
+    <section class="aboutMe">
+      <div class="shadow"></div>
+      <div class="container">
+        <div class="title">
+          <p>O MNIE</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="aboutWork">
+      <div class="shadow"></div>
+      <div class="container">
+        <div class="operatingRangeWrapperWork">
+          <div class="operatingRangeItem">
+            <img src="/images/kafel1.png" alt="">
+            <p>windykacja należności</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel2.png" alt="">
+            <p>przygotowanie i opiniowanie umów</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel3.png" alt="">
+            <p>pomoc frankowiczom</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel4.png" alt="">
+            <p>restrukturyzacja</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel5.png" alt="">
+            <p>upadłość</p>
+          </div>
+          <div class="operatingRangeItem">
+            <img src="/images/kafel6.png" alt="">
+            <p>postępowanie sądowe</p>
+          </div>
+        </div>
+      </section>
+      
+        
+    <section class="contact">
+      <div class="shadow"></div>
+      <div class="container">
+        <div class="titleContact">
+          <p></p>
+        </div>
+        <div class="contactWrapper">
+          <div class="contactData">
+            <p>e-mail:<br> kowalski@example.com<br> <br>
+              telefon:<br> 999-000-888<br><br>
+              zakres działalności:<br> Katowice - Gliwice - Częstochowa</p>
+          </div>
+          <div class="contactForm">
+            <h3 class="titleForm">FORMULARZ KONTAKTOWY</h3>
+            <form>
+              <input class="elementForm" type="email" id="email" size="30" placeholder="e-mail">
+              <select class="elementForm">
+                <option value="none" placeholder="Wybierz temat">Wybierz temat</option>
+                <option value="windykacja należności">windykacja należności</option>
+                <option value="przygotowanie umów i opinowanie">przygotowanie i opiniowanie umów</option>
+                <option value="pomoc frankowiczom">pomoc frankowiczom</option>
+                <option value="restrukturyzacja">restrukturyzacja</option>
+                <option value="upadłość">upadłość</option>
+                <option value="postępowanie sądowe">postępowanie sądowe</option>
+              </select>
+              <textarea class="elementForm" id="about" rows="5" cols="30" placeholder="Treść"></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+  
+    <script src="js/script.js"></script>
   </body>
 </html>

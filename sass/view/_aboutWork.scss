@@ -1,0 +1,17 @@
+.aboutWork {
+  margin-left: 160px;
+  height: 100%;
+  color: $title-color;
+  display: none;
+}
+.operatingRangeWrapperWork {
+  display: flex;
+   flex-wrap: wrap;
+   width: 600px;
+   margin: 0 auto;
+   padding: 100px;
+}
+
+.activePage {
+  display: block;
+}
