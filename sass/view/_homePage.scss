@@ -1,5 +1,5 @@
 .homePage {
-  margin-left: 160px;
+  margin-left: 200px;
   height: 100%;
   color: $title-color;
  display: none;
@@ -19,28 +19,29 @@
  .operatingRangeWrapper {
    display: flex;
    flex-wrap: wrap;
-   width: 600px;
-   margin: 50px auto;
+   width: 800px;
+   margin: 100px auto 80px;
  }
 
  .operatingRangeItem {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 220px;
   width: 33%;
-  padding: 20px 0;
+  padding: 30px 0 0 ;
   background-color: rgb(43, 42, 42);
   border: 1px $main-color solid;
   border-radius: 5px;
 
   img {
-    width: 90px;
+    width: 120px;
   }
 
   p {
-    width: 80%;
+    width: 70%;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
 
   }
  
@@ -54,3 +55,66 @@
  .activePage {
    display: block;
  }
+
+ @media(max-width: 1050px) {
+
+  .operatingRangeWrapper {
+    max-width: 600px;
+    margin: 50px auto 30px;
+  }
+
+  .operatingRangeItem {
+    width: 49%;
+    height: 170px;
+
+    img {
+      width: 110px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+ }
+
+ @media(max-width: 850px) {
+
+  .operatingRangeWrapper {
+    max-width: 400px;
+    margin: 50px auto 20px;
+  }
+
+  .operatingRangeItem {
+    width: 49%;
+    height: 160px;
+
+    img {
+      width: 90px;
+    }
+  
+    p {
+      width: 70%;
+      font-size: 17px;
+  
+    }
+  }
+ }
+
+ @media(max-width: 620px) {
+
+  .homePage {
+    margin-left: 0px;
+    height: 100%;
+    color: $title-color;
+   display: none;
+  }
+
+  .operatingRangeWrapper {
+    max-width: 400px;
+  }
+  .operatingRangeItem {
+  width: 49%;
+  }
+
+
+}

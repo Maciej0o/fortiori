@@ -1,5 +1,5 @@
 .aboutWork {
-  margin-left: 160px;
+  margin-left: 200px;
   height: 100%;
   color: $title-color;
   display: none;
@@ -7,11 +7,61 @@
 .operatingRangeWrapperWork {
   display: flex;
    flex-wrap: wrap;
-   width: 600px;
+   width: 800px;
    margin: 0 auto;
-   padding: 100px;
+   padding: 100px 10px 60px;;
 }
 
 .activePage {
   display: block;
+}
+
+@media(max-width: 1050px) {
+
+  .operatingRangeWrapperWork {
+    max-width: 600px;
+  }
+
+  .operatingRangeItemWork {
+    width: 49%;
+  }
+ }
+
+ @media(max-width: 850px) {
+
+  .operatingRangeWrapperWork {
+    max-width: 400px;
+  }
+
+  .operatingRangeItemWork {
+    width: 49%;
+    height: 180px;
+
+    img {
+      width: 100px;
+    }
+  
+    p {
+      width: 70%;
+      font-size: 20px;
+  
+    }
+  }
+ }
+
+ @media(max-width: 620px) {
+
+  .aboutWork {
+    margin-left: 0px;
+  
+  }
+
+  .operatingRangeWrapperWork {
+    max-width: 400px;
+  }
+  .operatingRangeItemWork {
+  width: 49%;
+  }
+
+
 }

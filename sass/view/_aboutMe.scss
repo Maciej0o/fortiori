@@ -1,5 +1,5 @@
 .aboutMe {
-  margin-left: 160px;
+  margin-left: 200px;
   height: 100%;
   color: $title-color;
   display: none;
@@ -9,6 +9,20 @@
   text-align: center;
   padding: 40px;
 }
+
+.content {
+  margin: 20px auto;
+  width: 70%;  
+  font-size: 22px;
+}
 .activePage {
   display: block;
+}
+
+@media(max-width: 620px) {
+
+  .aboutMe {
+    margin-left: 0px;
+  }
+
 }

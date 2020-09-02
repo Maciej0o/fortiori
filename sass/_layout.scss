@@ -23,11 +23,18 @@ body {
 
 .shadow {
   background-color: $main-color;
-  opacity: 1;
+  opacity: 0.9;
   z-index: -1;
-  width: calc(100% - 160px);
+  width: calc(100% - 200px);
   position: absolute;
 
 }
 
 
+@media(max-width: 620px) {
+ 
+  .shadow {
+    width: 100%;
+  }
+
+}

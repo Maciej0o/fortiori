@@ -1,5 +1,5 @@
 .contact {
-  margin-left: 160px;
+  margin-left: 200px;
   height: 100%;
   color: $title-color;
   display: none;
@@ -24,6 +24,7 @@
   flex-direction: column;
   align-items: center;
   width: 49%;
+  font-size: 22px;
 
   p {
     text-align: center;
@@ -43,10 +44,11 @@
       margin: 10px;
       color: white;
       opacity: 1;
-      background-color:rgb(110, 110, 110);
+      background-color: rgb(43, 42, 42);
       border-radius: 5px;
-      border: 1px white solid;
+      border: 1px $title-color solid;
       box-shadow: 5px 5px 15px #000;
+      width: 60%;
     }
 
     input, select {
@@ -80,4 +82,31 @@
 
 .activePage {
   display: block;
+}
+
+@media(max-width: 1050px) {
+
+  .contactData, .contactForm {
+    width: 99%;
+  }
+
+  .contactForm {
+    margin-top: 40px;
+    border-left: none;
+  }  
+ }
+
+ @media(max-width: 660px) {
+  .contactData, .contactForm {
+    font-size: 18px;;
+  }
+}
+
+
+@media(max-width: 620px) {
+
+  .contact {
+    margin-left: 0px;
+  }
+
 }
