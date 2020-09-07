@@ -1,0 +1,51 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-left: 200px;
+  background-color: $grey-color;
+  opacity: 0.4;
+  font-size: 13px;
+  position: absolute;
+  width: calc(100% -  200px);
+  bottom: 0%;
+}
+
+.leftFooter {
+  display: flex;
+  flex-direction: row;
+
+  p {
+    padding: 6px 10px;
+  }
+}
+
+.rightFooter {
+  padding: 6px 10px;
+
+}
+
+@media(max-width: 660px) {
+
+  footer {
+    margin-left: 0;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .leftFooter {
+    display: flex;
+    flex-direction: row;
+  
+    p {
+      padding: 6px 3px;
+    }
+  }
+  
+  .rightFooter {
+    padding: 6px 3px;
+  
+  }
+
+}
