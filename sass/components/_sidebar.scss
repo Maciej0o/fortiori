@@ -1,15 +1,26 @@
 .sidebar {
-  background-color: rgb(36, 36, 36);
   opacity: 0.8;
   width: 200px;
-  height: 100%;
-  position: fixed;
+  position: absolute;
+  display: block
+  ;
   
+  .shadowSidebar {
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    opacity: 0.9;
+    width: 200px;
+    z-index: -1;
+    position: fixed;
+  
+  }
+
   .titleBanner {
     margin: 20px auto 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     .logo {
       display: block;   
       justify-content: center;   
@@ -71,6 +82,7 @@
   }
 }
 
+
 @media(max-width: 620px) {
   .sidebar {
     background-color: rgb(36, 36, 36);
@@ -80,11 +92,14 @@
     width: 100%;
     justify-content: space-between;
     
+    .shadowSidebar {
+      display: none;
+    }
     .titleBanner {
       display: flex;
       justify-content: left;
       width: 30%;
-        }
+    }
 
     .sidebarWrapper {
       width: 70%;
@@ -93,7 +108,8 @@
       flex-direction: row;
 
       .sidebarItem {
-        margin: 0 10px;
+        margin: 0 8px;
+        border-bottom: none;
       
         a {
           display: none;
