@@ -9,7 +9,7 @@ body {
   font-family: $text;
   font-size: 24px;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./../images/bck3.JPG");
   background-repeat: no-repeat;
   object-fit: cover;
@@ -18,7 +18,7 @@ body {
 }
 
 .container, .shadow {
-  min-height: 100%;
+  height: 100%;
   font-size: 18px;
 }
 
@@ -27,7 +27,7 @@ body {
   opacity: 0.9;
   z-index: -1;
   width: calc(100% - 200px);
-  position: absolute;
+  position: fixed;
 
 }
 

@@ -10,7 +10,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: 24px;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./../images/bck3.JPG");
   background-repeat: no-repeat;
   object-fit: cover;
@@ -19,7 +19,7 @@ body {
 }
 
 .container, .shadow {
-  min-height: 100%;
+  height: 100%;
   font-size: 18px;
 }
 
@@ -28,7 +28,7 @@ body {
   opacity: 0.9;
   z-index: -1;
   width: calc(100% - 200px);
-  position: absolute;
+  position: fixed;
 }
 
 @media (max-width: 620px) {
@@ -42,6 +42,10 @@ body {
   min-height: 100vh;
   color: #8a753d;
   display: none;
+}
+
+.welcomeText {
+  padding: 100px 20px 20px;
 }
 
 .logoBaner {
@@ -208,7 +212,7 @@ body {
   opacity: 0.8;
   width: 200px;
   height: 100%;
-  position: absolute;
+  position: fixed;
 }
 
 .sidebar .titleBanner {
@@ -556,8 +560,8 @@ body {
   display: block;
   color: white;
   background-color: #8a753d;
-  font-size: 22px;
-  padding: 15px 40px;
+  font-size: 14px;
+  padding: 15px 25px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
