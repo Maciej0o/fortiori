@@ -388,7 +388,7 @@ body {
       flex-wrap: wrap;
   width: 800px;
   margin: 0 auto;
-  padding: 140px 10px 60px;
+  padding: 140px 0 60px;
 }
 
 .activePage {
@@ -403,7 +403,7 @@ body {
 
 @media (max-width: 850px) {
   .operatingRangeWrapperWork {
-    max-width: 400px;
+    max-width: 450px;
   }
 }
 
