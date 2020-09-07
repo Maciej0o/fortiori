@@ -162,7 +162,7 @@ body {
 
 @media (max-width: 850px) {
   .operatingRangeWrapper {
-    width: 85%;
+    max-width: 450px;
     margin: 40px auto 10px;
   }
   .operatingRangeItem {
@@ -193,7 +193,7 @@ body {
     margin-left: 0px;
   }
   .operatingRangeWrapper {
-    max-width: 450px;
+    max-width: 400px;
   }
   .operatingRangeItem {
     width: 49%;
@@ -201,6 +201,9 @@ body {
 }
 
 @media (max-width: 440px) {
+  .operatingRangeWrapper {
+    max-width: 370px;
+  }
   .operatingRangeItem img {
     width: 85px;
   }
@@ -412,7 +415,13 @@ body {
     margin-left: 0px;
   }
   .operatingRangeWrapperWork {
-    max-width: 450px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 440px) {
+  .operatingRangeWrapperWork {
+    max-width: 370px;
   }
 }
 

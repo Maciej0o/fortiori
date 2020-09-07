@@ -135,7 +135,7 @@
  @media(max-width: 850px) {
 
   .operatingRangeWrapper {
-    width: 85%;
+    max-width: 450px;
     margin: 40px auto 10px;
   }
 
@@ -177,7 +177,7 @@
   }
 
   .operatingRangeWrapper {
-    max-width: 450px;
+    max-width: 400px;
   }
   .operatingRangeItem {
   width: 49%;
@@ -187,6 +187,10 @@
 }
 
 @media(max-width: 440px) {
+  
+    .operatingRangeWrapper {
+      max-width: 370px;
+    }
    .operatingRangeItem {
 
     img {
