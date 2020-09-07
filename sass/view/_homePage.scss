@@ -1,6 +1,6 @@
 .homePage {
   margin-left: 200px;
-  min-height: 100vh;
+  min-height: calc(100vh - 30px);
   color: $title-color;
   display: none;
   padding-bottom: 30px;
