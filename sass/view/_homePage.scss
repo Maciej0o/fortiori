@@ -1,6 +1,6 @@
 .homePage {
   margin-left: 200px;
-  height: 100%;
+  min-height: 100vh;
   color: $title-color;
  display: none;
 }
@@ -21,7 +21,7 @@
    flex-wrap: wrap;
    width: 800px;
    margin: 100px auto 80px;
-   opacity: 0.9;
+   opacity: 1;
  }
 
  .operatingRangeItem {
@@ -105,7 +105,7 @@
 
   .operatingRangeItem {
     width: 49%;
-    height: 180px;
+    height: 220px;
 
     img {
       width: 110px;
@@ -136,20 +136,20 @@
 
   .operatingRangeWrapper {
     width: 85%;
-    margin: 50px auto 20px;
+    margin: 40px auto 10px;
   }
 
   .operatingRangeItem {
     width: 49%;
-    height: 180px;
+    height: 210px;
 
     img {
-      width: 85px;
+      width: 90px;
     }
   
     .titleBoxText {
       width: 70%;
-      font-size: 16px;
+      font-size: 20px;
   
     }
 
@@ -163,6 +163,7 @@
       width: 40px;
     }
     .titleBoxText {
+      width: 60%;
       font-size: 15px;
     }
   }

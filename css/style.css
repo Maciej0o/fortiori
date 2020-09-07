@@ -19,7 +19,7 @@ body {
 }
 
 .container, .shadow {
-  height: 100%;
+  min-height: 100%;
   font-size: 18px;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .homePage {
   margin-left: 200px;
-  height: 100%;
+  min-height: 100vh;
   color: #8a753d;
   display: none;
 }
@@ -62,7 +62,7 @@ body {
       flex-wrap: wrap;
   width: 800px;
   margin: 100px auto 80px;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .operatingRangeItem {
@@ -141,7 +141,7 @@ body {
   }
   .operatingRangeItem {
     width: 49%;
-    height: 180px;
+    height: 220px;
   }
   .operatingRangeItem img {
     width: 110px;
@@ -163,18 +163,18 @@ body {
 @media (max-width: 850px) {
   .operatingRangeWrapper {
     width: 85%;
-    margin: 50px auto 20px;
+    margin: 40px auto 10px;
   }
   .operatingRangeItem {
     width: 49%;
-    height: 180px;
+    height: 210px;
   }
   .operatingRangeItem img {
-    width: 85px;
+    width: 90px;
   }
   .operatingRangeItem .titleBoxText {
     width: 70%;
-    font-size: 16px;
+    font-size: 20px;
   }
   .operatingRangeItem .notDisplayingWrapper {
     font-size: 13px;
@@ -183,6 +183,7 @@ body {
     width: 40px;
   }
   .operatingRangeItem:hover .titleBoxText {
+    width: 60%;
     font-size: 15px;
   }
 }
@@ -206,7 +207,7 @@ body {
   background-color: #242424;
   opacity: 0.8;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   position: absolute;
 }
 
@@ -226,12 +227,6 @@ body {
       justify-content: center;
   width: 180px;
   color: #8a753d;
-}
-
-.sidebar .titleBanner .title {
-  font-size: 24px;
-  -ms-flex-pack: center;
-      justify-content: center;
 }
 
 .sidebar .sidebarWrapper {
@@ -280,13 +275,42 @@ body {
 
 @media (max-width: 620px) {
   .sidebar {
+    background-color: #242424;
+    opacity: 0.8;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .sidebar .titleBanner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: left;
+        justify-content: left;
+    width: 30%;
+  }
+  .sidebar .sidebarWrapper {
+    width: 70%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .sidebar .sidebarWrapper .sidebarItem {
+    margin: 0 10px;
+  }
+  .sidebar .sidebarWrapper .sidebarItem a {
     display: none;
   }
 }
 
 .aboutMe {
   margin-left: 200px;
-  height: 100%;
+  min-height: 100%;
   color: #8a753d;
   display: none;
 }

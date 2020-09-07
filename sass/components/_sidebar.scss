@@ -2,7 +2,7 @@
   background-color: rgb(36, 36, 36);
   opacity: 0.8;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   
   .titleBanner {
@@ -16,10 +16,7 @@
       width: 180px;
       color: $title-color;
     }
-    .title {
-      font-size: 24px;;
-      justify-content: center;
-    }
+    
   }
 
   .sidebarWrapper {
@@ -76,7 +73,35 @@
 
 @media(max-width: 620px) {
   .sidebar {
-    display: none;
+    background-color: rgb(36, 36, 36);
+    opacity: 0.8;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    
+    .titleBanner {
+      display: flex;
+      justify-content: left;
+      width: 30%;
+        }
+
+    .sidebarWrapper {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+
+      .sidebarItem {
+        margin: 0 10px;
+      
+        a {
+          display: none;
+        }
+      }
+    }
+    
   }
 
+  
 }
