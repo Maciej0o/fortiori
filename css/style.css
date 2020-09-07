@@ -16,6 +16,7 @@ body {
   object-fit: cover;
   background-size: cover;
   background-position: bottom right;
+  position: relative;
 }
 
 .container, .shadow {
@@ -626,7 +627,7 @@ footer {
   font-size: 13px;
   position: absolute;
   width: calc(100% -  200px);
-  bottom: 0%;
+  bottom: 0;
 }
 
 .leftFooter {
