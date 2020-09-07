@@ -31,7 +31,7 @@ body {
   position: fixed;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .shadow {
     width: 100%;
   }
@@ -48,14 +48,8 @@ body {
   padding: 100px 20px 20px;
 }
 
-.logoBaner {
-  display: none;
-  padding: 20px;
-  width: 200px;
-}
-
 .welcomeText p {
-  padding: 18px 0;
+  padding: 40px 0 25px 0;
   text-align: center;
 }
 
@@ -192,7 +186,7 @@ body {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .homePage {
     margin-left: 0px;
     height: 100%;
@@ -200,7 +194,7 @@ body {
     display: none;
   }
   .operatingRangeWrapper {
-    max-width: 400px;
+    max-width: 450px;
   }
   .operatingRangeItem {
     width: 49%;
@@ -305,7 +299,7 @@ body {
   color: #8a753d !important;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .sidebar {
     background-color: #242424;
     opacity: 0.8;
@@ -366,9 +360,12 @@ body {
   display: block;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .aboutMe {
-    margin-left: 0px;
+    margin: 0px;
+  }
+  .title {
+    padding-top: 100px;
   }
 }
 
@@ -408,7 +405,7 @@ body {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .aboutWork {
     margin-left: 0px;
   }
@@ -525,7 +522,7 @@ body {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .contact {
     margin-left: 0px;
   }

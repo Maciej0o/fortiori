@@ -8,13 +8,9 @@
 .welcomeText {
   padding: 100px 20px 20px;
 }
-.logoBaner {
-  display: none;
-  padding: 20px;
-  width: 200px;;
-}
+
 .welcomeText p {
-  padding: 18px 0; 
+  padding: 40px 0 25px 0; 
   text-align: center;
 }
 
@@ -173,7 +169,7 @@
 
  }
 
- @media(max-width: 620px) {
+ @media(max-width: 660px) {
 
   .homePage {
     margin-left: 0px;
@@ -183,7 +179,7 @@
   }
 
   .operatingRangeWrapper {
-    max-width: 400px;
+    max-width: 450px;
   }
   .operatingRangeItem {
   width: 49%;

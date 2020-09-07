@@ -19,10 +19,14 @@
   display: block;
 }
 
-@media(max-width: 620px) {
+@media(max-width: 660px) {
 
   .aboutMe {
-    margin-left: 0px;
+    margin: 0px;
+  }
+
+  .title {
+    padding-top: 100px;
   }
 
 }
