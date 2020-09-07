@@ -38,7 +38,7 @@
     width: 120px;
   }
 
-  p {
+  .titleBoxText {
     width: 70%;
     text-align: center;
     font-size: 22px;
@@ -49,7 +49,16 @@
 
  .operatingRangeItem:hover {
    color: $title-color;
-   background-color: rgb(77, 76, 76);
+   background-color: $grey-color;
+
+   img {
+     width: 80px;
+   }
+
+   .titleBoxText {
+     width: 40%;
+     font-size: 16px;
+   }
  }
 
  .activePage {
@@ -71,7 +80,7 @@
       width: 110px;
     }
 
-    p {
+    .titleBoxText {
       font-size: 20px;
     }
   }
@@ -92,7 +101,7 @@
       width: 90px;
     }
   
-    p {
+    .titleBoxText {
       width: 70%;
       font-size: 17px;
   

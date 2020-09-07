@@ -33,20 +33,7 @@
     max-width: 400px;
   }
 
-  .operatingRangeItemWork {
-    width: 49%;
-    height: 180px;
-
-    img {
-      width: 100px;
-    }
   
-    p {
-      width: 70%;
-      font-size: 20px;
-  
-    }
-  }
  }
 
  @media(max-width: 620px) {
@@ -58,9 +45,6 @@
 
   .operatingRangeWrapperWork {
     max-width: 400px;
-  }
-  .operatingRangeItemWork {
-  width: 49%;
   }
 
 
