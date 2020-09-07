@@ -1,6 +1,6 @@
 .aboutWork {
   margin-left: 200px;
-  height: calc(100vh - 30px);
+  min-height: calc(100vh - 30px);
   color: $title-color;
   display: none;
   padding-bottom: 30px;
@@ -24,9 +24,6 @@
     max-width: 600px;
   }
 
-  .operatingRangeItemWork {
-    width: 49%;
-  }
  }
 
  @media(max-width: 850px) {
@@ -46,7 +43,7 @@
   }
 
   .operatingRangeWrapperWork {
-    max-width: 400px;
+    max-width: 450px;
   }
 
 
