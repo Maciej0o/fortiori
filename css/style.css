@@ -377,15 +377,17 @@ body {
   .sidebar .sidebarWrapper .sidebarItem {
     margin: 0 8px;
     border-bottom: none;
+    cursor: none;
   }
   .sidebar .sidebarWrapper .sidebarItem a {
-    display: none;
+    display: default;
   }
 }
 
 @media (max-width: 440px) {
   .sidebar .sidebarWrapper .sidebarItem {
     margin: 0 2px;
+    cursor: default;
   }
 }
 

@@ -42,7 +42,7 @@
       border-bottom: 1px $main-color  solid;
       cursor: pointer;
       transition: 1s;
-      
+
 
       a {
         text-decoration: none;
@@ -111,9 +111,10 @@
       .sidebarItem {
         margin: 0 8px;
         border-bottom: none;
+        cursor: none;
       
         a {
-          display: none;
+          display: default;
         }
       }
     }
@@ -130,6 +131,7 @@
 
       .sidebarItem {
         margin: 0 2px;
+        cursor: default;
 
       }
     }
