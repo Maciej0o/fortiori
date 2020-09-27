@@ -16,6 +16,13 @@ const box4 = document.getElementById('box4');
 const box5 = document.getElementById('box5');
 const box6 = document.getElementById('box6');
 
+const btnContact1 = document.getElementById('btn-contact1');
+const btnContact2 = document.getElementById('btn-contact2');
+const btnContact3 = document.getElementById('btn-contact3');
+const btnContact4 = document.getElementById('btn-contact4');
+const btnContact5 = document.getElementById('btn-contact5');
+const btnContact6 = document.getElementById('btn-contact6');
+
 homePageMenu.addEventListener('click', function(){
  let link = document.querySelector(".active");
  let page = document.querySelector(".activePage")
@@ -52,7 +59,6 @@ aboutMeMenu.addEventListener('click', function(){
   page.classList.remove('activePage');
   contactMenu.classList.add('active');
   contact.classList.add('activePage');
-
  });
 
  function closeModal() {
@@ -65,6 +71,55 @@ document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
     closeModal()
   })
 });
+
+btnContact1.addEventListener('click',function(){
+  let link = document.querySelector(".active");
+  let page = document.querySelector(".activePage")
+  link.classList.remove('active');
+  page.classList.remove('activePage');
+  contactMenu.classList.add('active');
+  contact.classList.add('activePage');
+ } )
+btnContact2.addEventListener('click',function(){
+  let link = document.querySelector(".active");
+  let page = document.querySelector(".activePage")
+  link.classList.remove('active');
+  page.classList.remove('activePage');
+  contactMenu.classList.add('active');
+  contact.classList.add('activePage');
+ } )
+btnContact3.addEventListener('click',function(){
+  let link = document.querySelector(".active");
+  let page = document.querySelector(".activePage")
+  link.classList.remove('active');
+  page.classList.remove('activePage');
+  contactMenu.classList.add('active');
+  contact.classList.add('activePage');
+ } )
+btnContact4.addEventListener('click',function(){
+  let link = document.querySelector(".active");
+  let page = document.querySelector(".activePage")
+  link.classList.remove('active');
+  page.classList.remove('activePage');
+  contactMenu.classList.add('active');
+  contact.classList.add('activePage');
+ } )
+btnContact5.addEventListener('click',function(){
+  let link = document.querySelector(".active");
+  let page = document.querySelector(".activePage")
+  link.classList.remove('active');
+  page.classList.remove('activePage');
+  contactMenu.classList.add('active');
+  contact.classList.add('activePage');
+ } )
+btnContact6.addEventListener('click',function(){
+  let link = document.querySelector(".active");
+  let page = document.querySelector(".activePage")
+  link.classList.remove('active');
+  page.classList.remove('activePage');
+  contactMenu.classList.add('active');
+  contact.classList.add('activePage');
+ } )
 
 document.querySelector('#overlay').addEventListener('click', function(e) {
   if(e.target === this) {

@@ -11,7 +11,7 @@ body {
   font-size: 24px;
   margin: 0;
   min-height: 100vh;
-  background-image: url("/../../images/bck3.jpg");
+  background: url("/../../images/bck3.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -50,7 +50,12 @@ body {
   padding: 100px 20px 20px;
 }
 
+.welcomeText span {
+  color: #8a753d;
+}
+
 .welcomeText p {
+  color: white;
   padding: 30px 0 25px 0;
   text-align: center;
 }
@@ -78,19 +83,19 @@ body {
   background-color: #2b2a2a;
   border: 1px #3d0e16 solid;
   border-radius: 5px;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
 }
 
 .operatingRangeItem img {
   width: 120px;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
 }
 
 .operatingRangeItem .titleBoxText {
   width: 70%;
   text-align: center;
   font-size: 22px;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
 }
 
 .operatingRangeItem .notDisplayingWrapper {
@@ -357,6 +362,7 @@ body {
   margin: 20px auto;
   width: 70%;
   font-size: 22px;
+  text-align: justify;
 }
 
 .title {
@@ -481,9 +487,7 @@ body {
   color: white;
   opacity: 1;
   background-color: #2b2a2a;
-  border-radius: 5px;
   border: 1px #8a753d solid;
-  box-shadow: 5px 5px 15px #000;
   width: 60%;
 }
 
@@ -504,14 +508,12 @@ body {
 }
 
 .submit {
-  background-color: #8a753d;
-  border: none;
+  background-color: #2b2a2a;
+  border: 1px #8a753d solid;
+  margin-top: 10px;
   padding: 5px 20px;
   color: white;
-  border: 1px white solid;
   cursor: pointer;
-  box-shadow: 5px 5px 15px #000;
-  border-radius: 5px;
 }
 
 .activePage {
@@ -568,7 +570,7 @@ body {
   background-color: #4d4c4c;
   opacity: 0.8;
   position: relative;
-  padding: 30px;
+  padding: 40px;
   display: none;
   border-radius: 8px;
 }
@@ -581,8 +583,9 @@ body {
 }
 
 .modal p {
+  text-align: justify;
   font-size: 22px;
-  margin: 0 40px;
+  margin: 20px 40px 88px;
 }
 
 .modal.show {
@@ -598,16 +601,15 @@ body {
 }
 
 .modal .btn-close-down {
-  display: block;
   color: white;
-  background-color: #8a753d;
-  font-size: 14px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  font-size: 18px;
   padding: 15px 25px;
-  border-radius: 8px;
   border: none;
   cursor: pointer;
-  margin: 50px 40px 20px 40px;
-  box-shadow: 4px 4px 15px black;
+  background-color: #2b2a2a;
 }
 
 .modal img {

@@ -49,9 +49,7 @@
       color: white;
       opacity: 1;
       background-color: rgb(43, 42, 42);
-      border-radius: 5px;
       border: 1px $title-color solid;
-      box-shadow: 5px 5px 15px #000;
       width: 60%;
     }
 
@@ -68,14 +66,12 @@
 }
 
 .submit {
-  background-color: $title-color;
-  border: none;
+  background-color: rgb(43, 42, 42);
+  border: 1px $title-color solid;
+  margin-top: 10px;
   padding: 5px 20px;
   color: white;
-  border: 1px white solid;
   cursor: pointer;
-  box-shadow: 5px 5px 15px #000;
-  border-radius: 5px;
 
 
 
