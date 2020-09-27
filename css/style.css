@@ -5,9 +5,8 @@
   box-sizing: border-box;
 }
 
-.press, img, .press:focus, img:focus {
-  outline: 0 !important;
-  border: 0 none !important;
+*:focus {
+  outline: none;
 }
 
 body {
