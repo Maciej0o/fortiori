@@ -121,3 +121,16 @@
 
   
 }
+
+@media(max-width: 440px) {
+  .sidebar {
+   
+    .sidebarWrapper {
+
+      .sidebarItem {
+        margin: 0 2px;
+
+      }
+    }
+  }
+}
