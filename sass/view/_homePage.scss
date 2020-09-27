@@ -62,7 +62,7 @@
     font-size: 18px;
     color: white;
     display: none;
-    transition-duration: 1s;
+    transition-duration: 0.4s;
     overflow:hidden;
     width: 90%;
 
@@ -182,6 +182,10 @@
 
   .homePage {
     margin-left: 0px;
+  }
+
+  .welcomeText {
+    padding-top: 80px;
   }
 
   .operatingRangeWrapper {
