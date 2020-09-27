@@ -393,6 +393,7 @@ body {
 .title {
   text-align: center;
   padding: 40px;
+  color: #e0cece;
 }
 
 .content {
@@ -400,14 +401,29 @@ body {
   width: 70%;
   font-size: 22px;
   text-align: justify;
+  color: #e0cece;
 }
 
 .title {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .activePage {
   display: block;
+}
+
+@media (max-width: 1150px) {
+  .content {
+    font-size: 20px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 850px) {
+  .content {
+    font-size: 18px;
+    width: 85%;
+  }
 }
 
 @media (max-width: 660px) {
@@ -416,6 +432,16 @@ body {
   }
   .title {
     padding-top: 100px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutMe {
+    margin: 0px;
+  }
+  .content {
+    font-size: 17px;
   }
 }
 
@@ -623,13 +649,14 @@ body {
   color: #8a753d;
   text-align: center;
   margin: 15px;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .modal p {
   text-align: justify;
   font-size: 22px;
   margin: 20px 40px 88px;
+  color: #e0cece;
 }
 
 .modal.show {
@@ -645,7 +672,7 @@ body {
 }
 
 .modal .btn-close-down {
-  color: white;
+  color: #e0cece;
   position: absolute;
   bottom: 40px;
   right: 40px;

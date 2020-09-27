@@ -32,7 +32,7 @@
     color: $title-color;
     text-align: center;
     margin: 15px; 
-    font-size: 28px;
+    font-size: 26px;
   }
 
   p {
@@ -40,6 +40,7 @@
     text-align: justify;
     font-size: 22px;
     margin: 20px 40px 88px;
+    color: $white-color;  
   }
 }
 
@@ -55,7 +56,7 @@
 }
 
 .modal .btn-close-down {
-  color: white;
+  color: $white-color;
   position: absolute;  
   bottom: 40px;
   right: 40px;
