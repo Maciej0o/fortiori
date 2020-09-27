@@ -16,7 +16,7 @@
 }
 
 .contactWrapper {
-  padding: 80px 50px 0; 
+  padding: 100px 50px; 
   display: flex;
   flex-wrap: wrap;
 }
@@ -32,6 +32,12 @@
     text-align: center;
     
   }
+}
+
+.contactData {
+  color: $white-color;
+  font-size: 26px;
+
 }
 
 .contactForm {
@@ -50,7 +56,7 @@
       opacity: 1;
       background-color: rgb(43, 42, 42);
       border: 1px $title-color solid;
-      width: 60%;
+      width: 80%;
     }
 
     input, select {
@@ -96,17 +102,22 @@
   }  
  }
 
- @media(max-width: 660px) {
+ @media(max-width: 672px) {
   .contactData, .contactForm {
-    font-size: 18px;;
+    font-size: 24px;
+  }
+
+  .contact {
+    margin-left: 0px;
   }
 }
 
 
-@media(max-width: 660px) {
+@media(max-width: 510px) {
 
-  .contact {
-    margin-left: 0px;
+  .titleForm {
+    text-align: center;
+    font-size:  24px;
   }
 
 }

@@ -32,7 +32,7 @@ body {
   position: fixed;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 672px) {
   .shadow {
     width: 100%;
   }
@@ -195,7 +195,7 @@ body {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 672px) {
   .homePage {
     margin-left: 0px;
   }
@@ -337,7 +337,7 @@ body {
   color: #8a753d !important;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 672px) {
   .sidebar {
     background-color: #242424;
     opacity: 0.8;
@@ -479,7 +479,7 @@ body {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 672px) {
   .aboutWork {
     margin-left: 0px;
   }
@@ -516,7 +516,7 @@ body {
 }
 
 .contactWrapper {
-  padding: 80px 50px 0;
+  padding: 100px 50px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -536,6 +536,11 @@ body {
 
 .contactData p, .contactForm p {
   text-align: center;
+}
+
+.contactData {
+  color: #e0cece;
+  font-size: 26px;
 }
 
 .contactForm {
@@ -559,7 +564,7 @@ body {
   opacity: 1;
   background-color: #2b2a2a;
   border: 1px #8a753d solid;
-  width: 60%;
+  width: 80%;
 }
 
 .contactForm form input, .contactForm form select {
@@ -601,15 +606,19 @@ body {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 672px) {
   .contactData, .contactForm {
-    font-size: 18px;
+    font-size: 24px;
+  }
+  .contact {
+    margin-left: 0px;
   }
 }
 
-@media (max-width: 660px) {
-  .contact {
-    margin-left: 0px;
+@media (max-width: 510px) {
+  .titleForm {
+    text-align: center;
+    font-size: 24px;
   }
 }
 
