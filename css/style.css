@@ -380,14 +380,14 @@ body {
     cursor: none;
   }
   .sidebar .sidebarWrapper .sidebarItem a {
-    display: default;
+    display: none;
   }
 }
 
 @media (max-width: 440px) {
   .sidebar .sidebarWrapper .sidebarItem {
     margin: 0 2px;
-    cursor: default;
+    cursor: none;
   }
 }
 
