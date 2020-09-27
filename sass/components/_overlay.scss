@@ -60,12 +60,17 @@
   position: absolute;  
   bottom: 40px;
   right: 40px;
-  font-size: 18px;
-  padding: 15px 25px;
+  font-size: 16px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
-  background-color: rgb(43, 42, 42);
+  background-color: rgb(56, 55, 55);
   
+}
+
+.modal .btn-close-down:hover {
+  color: white;
+  background-color: $grey-color;
 }
 
 .modal img {
