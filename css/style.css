@@ -47,11 +47,11 @@ body {
 }
 
 .welcomeText {
-  padding: 60px 20px 20px;
+  padding: 60px 20px 5px;
 }
 
 .welcomeText span {
-  color: gold;
+  color: #8a753d;
 }
 
 .welcomeText p {
@@ -67,7 +67,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 800px;
-  margin: 40px auto 80px;
+  margin: 30px auto 25px;
   opacity: 1;
 }
 
@@ -395,7 +395,7 @@ body {
 
 .title {
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   color: #e0cece;
 }
 
@@ -463,7 +463,7 @@ body {
       flex-wrap: wrap;
   width: 800px;
   margin: 0 auto;
-  padding: 140px 0 60px;
+  padding: 135px 0 40px;
 }
 
 .activePage {
