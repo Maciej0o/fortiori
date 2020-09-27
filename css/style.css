@@ -5,8 +5,29 @@
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: none;
+*::selection {
+  background-color: transparent;
+}
+
+*::-moz-selection {
+  background-color: transparent;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  /*IE10*/
+  -ms-user-select: none;
+  user-select: none;
+  /*You just need this if you are only concerned with android and not desktop browsers.*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[type="text"], textarea, [contenteditable] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 body {
@@ -66,22 +87,17 @@ body {
 }
 
 .operatingRangeWrapper {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 800px;
   margin: 30px auto 25px;
   opacity: 1;
 }
 
 .operatingRangeItem {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  flex-direction: column;
+  align-items: center;
   height: 260px;
   width: 33%;
   padding: 30px 0 0;
@@ -240,8 +256,7 @@ body {
 @media (max-width: 440px) {
   .operatingRangeWrapper {
     max-width: 300px;
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
   }
   .operatingRangeItem {
     width: 90%;
@@ -284,18 +299,14 @@ body {
 
 .sidebar .titleBanner {
   margin: 20px auto 30px;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sidebar .titleBanner .logo {
   display: block;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   width: 180px;
   color: #8a753d;
 }
@@ -348,31 +359,24 @@ body {
   .sidebar {
     background-color: #242424;
     opacity: 0.8;
-    display: -ms-flexbox;
     display: flex;
     height: 80px;
     width: 100%;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
   }
   .sidebar .shadowSidebar {
     display: none;
   }
   .sidebar .titleBanner {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: left;
-        justify-content: left;
+    justify-content: left;
     width: 30%;
   }
   .sidebar .sidebarWrapper {
     width: 70%;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    justify-content: flex-end;
+    flex-direction: row;
   }
   .sidebar .sidebarWrapper .sidebarItem {
     margin: 0 8px;
@@ -461,10 +465,8 @@ body {
 }
 
 .operatingRangeWrapperWork {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 800px;
   margin: 0 auto;
   padding: 135px 0 40px;
@@ -504,8 +506,7 @@ body {
 @media (max-width: 440px) {
   .operatingRangeWrapperWork {
     max-width: 300px;
-    -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -524,19 +525,14 @@ body {
 
 .contactWrapper {
   padding: 100px 50px;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .contactData, .contactForm {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 49%;
   font-size: 22px;
 }
@@ -556,13 +552,10 @@ body {
 
 .contactForm form {
   margin-top: 20px;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   width: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
 }
 
 .contactForm form .elementForm {
@@ -576,12 +569,6 @@ body {
 
 .contactForm form input, .contactForm form select {
   height: 25px;
-}
-
-.contactForm form :-ms-input-placeholder {
-  color: white;
-  opacity: 1;
-  padding: 5px;
 }
 
 .contactForm form ::placeholder {
@@ -637,17 +624,14 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
   padding: 30px;
   display: none;
 }
 
 .overlay.show {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -778,12 +762,9 @@ body {
 }
 
 footer {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0 30px;
   margin-left: 200px;
   background-color: #2b2a2a;
@@ -793,10 +774,8 @@ footer {
 }
 
 .leftFooter {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
 }
 
 .leftFooter p {
@@ -814,10 +793,8 @@ footer {
     width: 100%;
   }
   .leftFooter {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
   .leftFooter p {
     padding: 6px 3px;
@@ -826,4 +803,5 @@ footer {
     padding: 6px 3px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
