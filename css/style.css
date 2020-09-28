@@ -391,6 +391,12 @@ body {
 }
 
 @media (max-width: 440px) {
+  .sidebar {
+    background-color: #242424;
+  }
+  .sidebar .sidebarWrapper {
+    width: 70%;
+  }
   .sidebar .sidebarWrapper .sidebarItem {
     padding: 0;
     margin: 25px 5px;

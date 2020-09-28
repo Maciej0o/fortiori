@@ -130,8 +130,10 @@
 
 @media(max-width: 440px) {
   .sidebar {
-   
+    background-color: rgb(36, 36, 36);
+
     .sidebarWrapper {
+      width: 70%;
 
       .sidebarItem {
         padding: 0;
