@@ -375,19 +375,25 @@ body {
         flex-direction: row;
   }
   .sidebar .sidebarWrapper .sidebarItem {
-    margin: 0 8px;
+    padding: 0;
+    margin: 25px 8px;
     border-bottom: none;
-    cursor: none;
+    cursor: default;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .sidebar .sidebarWrapper .sidebarItem a {
     display: none;
+  }
+  .sidebar .sidebarWrapper .sidebarItem i {
+    padding: 0px 8px;
   }
 }
 
 @media (max-width: 440px) {
   .sidebar .sidebarWrapper .sidebarItem {
     margin: 0 2px;
-    cursor: none;
+    cursor: default;
   }
 }
 

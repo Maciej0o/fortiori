@@ -109,12 +109,19 @@
       flex-direction: row;
 
       .sidebarItem {
-        margin: 0 8px;
+        padding: 0;
+        margin: 25px 8px;
         border-bottom: none;
-        cursor: none;
+        cursor: default;
+        justify-content: center;
       
         a {
           display: none;
+        }
+
+        i {
+          padding: 0px 8px;
+
         }
       }
     }
@@ -131,7 +138,7 @@
 
       .sidebarItem {
         margin: 0 2px;
-        cursor: none;
+        cursor: default;
 
       }
     }
