@@ -378,9 +378,9 @@ body {
     padding: 0;
     margin: 25px 8px;
     border-bottom: none;
-    cursor: default;
     -ms-flex-pack: center;
         justify-content: center;
+    cursor: default;
   }
   .sidebar .sidebarWrapper .sidebarItem a {
     display: none;
@@ -392,8 +392,12 @@ body {
 
 @media (max-width: 440px) {
   .sidebar .sidebarWrapper .sidebarItem {
-    margin: 0 2px;
+    padding: 0;
+    margin: 25px 5px;
     cursor: default;
+  }
+  .sidebar .sidebarWrapper .sidebarItem i {
+    padding: 0px 5px;
   }
 }
 

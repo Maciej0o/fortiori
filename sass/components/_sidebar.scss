@@ -112,8 +112,8 @@
         padding: 0;
         margin: 25px 8px;
         border-bottom: none;
-        cursor: default;
         justify-content: center;
+        cursor: default;
       
         a {
           display: none;
@@ -121,7 +121,6 @@
 
         i {
           padding: 0px 8px;
-
         }
       }
     }
@@ -137,9 +136,13 @@
     .sidebarWrapper {
 
       .sidebarItem {
-        margin: 0 2px;
+        padding: 0;
+        margin: 25px 5px;
         cursor: default;
 
+        i {
+          padding: 0px 5px;
+        }
       }
     }
   }
