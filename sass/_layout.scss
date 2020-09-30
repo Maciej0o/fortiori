@@ -23,12 +23,13 @@ body {
   position: relative;
 }
 
-.container, .shadow {
+.container {
   height: 100%;
   font-size: 18px;
 }
 
 .shadow {
+  min-height: 100vh;
   background-color: $main-color;
   opacity: 0.9;
   z-index: -1;
